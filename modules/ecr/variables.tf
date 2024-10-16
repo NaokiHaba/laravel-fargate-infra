@@ -2,7 +2,7 @@ variable "name" {
   type = string
 }
 
-variable "holding_count" {
-  type    = number
+variable "hold_count" {
+  type = number
   default = 10
 }

@@ -3,19 +3,19 @@ provider "aws" {
 
   default_tags {
     tags = {
-      Env    = "prod"
-      System = "example"
+      Environment = "prod"
+      Project = "example"
     }
   }
 }
 
 terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "3.42.0"
+    required_providers {
+        aws = {
+            source = "hashicorp/aws"
+            version = "~> 4.0"
+        }
     }
-  }
 
-  required_version = "1.0.0"
+    required_version = "~> 1.9.5"
 }
